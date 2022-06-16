@@ -1,0 +1,9 @@
+name: Build USD RS
+on: [push]
+jobs:
+  build-usd-rss:
+    runs-on: ubuntu-latest
+    container:
+        image: aswf/ci-usd:2021
+    steps:
+      - run: g++ --version
