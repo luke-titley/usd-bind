@@ -3,4 +3,4 @@ RUN curl -L https://github.com/PixarAnimationStudios/USD/archive/refs/tags/v21.1
 RUN unzip /tmp/usd.zip
 RUN curl --proto '=https' -sSf https://sh.rustup.rs > /tmp/rustinit.sh
 RUN bash /tmp/rustinit.sh -y --default-toolchain=1.52.0
-RUN python USD-21.11/build_scripts/build_usd.py --no-imaging -v /usr/local/USD
+RUN python2 USD-21.11/build_scripts/build_usd.py --no-imaging --no-python -v /usr/local/USD
